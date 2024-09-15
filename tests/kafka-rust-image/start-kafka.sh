@@ -6,7 +6,7 @@ fi
 
 create-topics.sh &
 
-if [[ ! -z "$KAFKA_CLIENT_SECURE" ]] && ! echo $KAFKA_VER | grep -P '^0.8'; then
+if [[ ! -z "$KAFKA_CLIENT_SECURE" ]]; then
   config_fname="$KAFKA_HOME/config/secure.server.properties"
 else
   config_fname="$KAFKA_HOME/config/server.properties"
