@@ -18,58 +18,22 @@ jobs:
     strategy:
       matrix:
         include:
-          - KAFKA_VER: 0.10.2.1
+          - KAFKA_VER: 3.0.0
             COMPRESSIONS: NONE
             SECURES: ""
-          - KAFKA_VER: 0.10.2.1
+          - KAFKA_VER: 3.0.0
             COMPRESSIONS: NONE
             SECURES: secure
-          - KAFKA_VER: 0.10.2.1
+          - KAFKA_VER: 3.0.0
             COMPRESSIONS: SNAPPY
             SECURES: ""
-          - KAFKA_VER: 0.10.2.1
+          - KAFKA_VER: 3.0.0
             COMPRESSIONS: SNAPPY
             SECURES: secure
-          - KAFKA_VER: 0.10.2.1
+          - KAFKA_VER: 3.0.0
             COMPRESSIONS: GZIP
             SECURES: ""
-          - KAFKA_VER: 0.10.2.1
-            COMPRESSIONS: GZIP
-            SECURES: secure
-          - KAFKA_VER: 0.11.0.1
-            COMPRESSIONS: NONE
-            SECURES: ""
-          - KAFKA_VER: 0.11.0.1
-            COMPRESSIONS: NONE
-            SECURES: secure
-          - KAFKA_VER: 0.11.0.1
-            COMPRESSIONS: SNAPPY
-            SECURES: ""
-          - KAFKA_VER: 0.11.0.1
-            COMPRESSIONS: SNAPPY
-            SECURES: secure
-          - KAFKA_VER: 0.11.0.1
-            COMPRESSIONS: GZIP
-            SECURES: ""
-          - KAFKA_VER: 0.11.0.1
-            COMPRESSIONS: GZIP
-            SECURES: secure
-          - KAFKA_VER: 1.0.0
-            COMPRESSIONS: NONE
-            SECURES: ""
-          - KAFKA_VER: 1.0.0
-            COMPRESSIONS: NONE
-            SECURES: secure
-          - KAFKA_VER: 1.0.0
-            COMPRESSIONS: SNAPPY
-            SECURES: ""
-          - KAFKA_VER: 1.0.0
-            COMPRESSIONS: SNAPPY
-            SECURES: secure
-          - KAFKA_VER: 1.0.0
-            COMPRESSIONS: GZIP
-            SECURES: ""
-          - KAFKA_VER: 1.0.0
+          - KAFKA_VER: 3.0.0
             COMPRESSIONS: GZIP
             SECURES: secure
     steps:
