@@ -4,6 +4,9 @@ if [[ -z "$KAFKA_PORT" ]]; then
     export KAFKA_PORT=9092
 fi
 
+
+echo "Starting kafka server"
+
 create-topics.sh &
 
 if [[ ! -z "$KAFKA_CLIENT_SECURE" ]]; then
