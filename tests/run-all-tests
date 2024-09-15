@@ -18,7 +18,7 @@
 # `wurstmeister/kafka` repo. If there are no versions specified, it runs the tests
 # on a set of default versions.
 
-set -e
+set -e -x
 
 stop_docker() {
   docker compose down
@@ -63,7 +63,7 @@ DEFAULT_SECURES=':secure'
 
 declare SCALA_VERS_3_0_0='2.13'
 declare SCALA_VERS_3_1_0='2.13'
-declare SCALA_VERS_3_2_0='2.13'
+declare SCALA_VERS_3_0_0='2.13'
 
 scala_version_for_kafka() {
     local kv=$(echo $1 | sed 's/\./_/g')
