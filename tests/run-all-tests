@@ -61,12 +61,7 @@ DEFAULT_VERS='0.8.2.2:0.9.0.1:0.10.2.1:0.11.0.1:1.0.0:3.1.0'
 DEFAULT_COMPRESSIONS='NONE:SNAPPY:GZIP'
 DEFAULT_SECURES=':secure'
 
-declare SCALA_VERS_0_8_2_2='2.11'
-declare SCALA_VERS_0_9_0_1='2.11'
-declare SCALA_VERS_0_10_2_1='2.12'
-declare SCALA_VERS_0_11_0_1='2.12'
-declare SCALA_VERS_1_0_0='2.12'
-declare SCALA_VERS_3_1_0='2.13'
+declare SCALA_VERS_3_0_0='2.13'
 
 scala_version_for_kafka() {
     local kv=$(echo $1 | sed 's/\./_/g')
