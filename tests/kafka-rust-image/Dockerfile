@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y wget jq coreutils net-tools openjdk-8-jre
 
